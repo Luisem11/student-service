@@ -1,0 +1,21 @@
+{
+  "name": "estudiantesAPI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node students/index.js",
+    "dev": "nodemon students/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-generator": "^4.16.1",
+    "mongodb": "^3.5.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
