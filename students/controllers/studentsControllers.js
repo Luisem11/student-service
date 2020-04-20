@@ -80,8 +80,13 @@ controller.updateMany = async (req, res) => {
     res.json(result);
 };
 controller.getAverage = async (req, res) => {
+    const {
+        sub
+    } = req.params;
     const db = await connect();
-    const result = await db.collection('students').find({}).toArray();
+    const result = await db.collection('students').find({
+        subject: sub
+    }).toArray();
     var average = 0;
     for (var i = 0; i < result.length; i++) {
         average += result[i].score;

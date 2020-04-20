@@ -13,5 +13,5 @@ router.get('/students/:id', studentsControllers.findById);
 router.put('/students/:id', studentsControllers.update);
 router.delete('/students/:id', studentsControllers.delete);
 router.post('/students/replace', studentsControllers.updateMany);
-router.get('/students/avg', studentsControllers.getAverage);
+router.get('/students/avg/:sub', studentsControllers.getAverage);
 module.exports = router;
